@@ -71,11 +71,11 @@ public class RadioTest {
     public void shouldNextMoreMaxStationNumber() {
         Radio radio = new Radio();
 
-        radio.setCurrentStationNumber(0);
+        radio.setCurrentStationNumber(9);
 
         radio.nextStationNumber();
 
-        int expected = 1;
+        int expected = 0;
         int actual = radio.getCurrentStationNumber();
 
         Assertions.assertEquals(expected, actual);
