@@ -209,6 +209,16 @@ public class RadioTest {
     //
 
     @Test
+    public void test() {
+        Radio radio = new Radio(9, 0);
+        Assertions.assertEquals(9, radio.getMaxCurrentStationNumber());
+        Assertions.assertEquals(0, radio.getMinCurrentStationNumber());
+        Assertions.assertEquals(0, radio.getCurrentStationNumber());
+    }
+
+
+
+    @Test
     public void shouldCreateStationsWithLimits() {
         Radio radio = new Radio(1);
         Assertions.assertEquals(0, radio.getMaxCurrentStationNumber());
