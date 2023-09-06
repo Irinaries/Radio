@@ -42,12 +42,12 @@ public class Radio {
 
     public void nextStationNumber() {
         if (currentStationNumber >= 9) {
+
+        }
+        if   (currentStationNumber == 0) {
             return;
         }
-         if   (currentStationNumber == 0) {
-            return;
-        }
-            currentStationNumber = currentStationNumber + 1;
+        currentStationNumber = currentStationNumber + 1;
 
 
 
@@ -90,16 +90,3 @@ public class Radio {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
